@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="../static/CSS/diseasesPridiction.css">
+  <head>
+    <link rel="stylesheet" href="../static/CSS/diseasesPridiction.css" />
     <script src="../static/JS/diseasesPridiction.js"></script>
-    <title>
-        Liver Disease Prediction
-    </title>
+    <title>Liver Disease Prediction</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -32,188 +30,194 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-div">
-        <div class="header">
-                <a  id = "homeTag" class="tag" href="#home">HOME</a>
-                <a  id = "exTag"  class="tag" href="#examine">EXAMINE</a>
-                <a  id = "aboutTag"  class="tag" href="#about">ABOUT US</a>
-                <a  id = "contactTag" class="tag">CONTACT</a>
-        </div>
-        <div class="moto">
-            EXAMINE YOUR LIVER DISEASE BEFORE ITS TOO LATE
-        </div>
+      <div class="header">
+        <a id="homeTag" class="tag" href="#home">HOME</a>
+        <a id="exTag" class="tag" href="#examine">EXAMINE</a>
+        <a id="aboutTag" class="tag" href="#about">ABOUT US</a>
+        <a id="contactTag" class="tag">CONTACT</a>
+      </div>
+      <div class="moto">EXAMINE YOUR LIVER DISEASE BEFORE ITS TOO LATE</div>
     </div>
-    <div id = "home">
-        <div id = "heading">
-            <h1 class="h1">
-                HOME
-            </h1>
+    <div id="home">
+      <div id="heading">
+        <h1 class="h1">HOME</h1>
+      </div>
+      <div id="flex-container">
+        <div id="homeLeft">
+          <div id="homeHead">WE ARE HERE TO HELP YOU!</div>
+          <br /><br /><br /><br /><br />
+          <div id="desc">
+            Proper examination of liver disease is much imortant for better
+            treatment. Little damage can be worst if not treated properly. This
+            methodology will be a great help for poor people as it will be less
+            expensive and ultimately providing relief from pain to the patients
+            because they only need ultrasound images for predicting liver
+            disease.
+          </div>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <div id="homeHead">HOW IT WORKS?</div>
+          <br /><br /><br /><br /><br />
+          <div id="desc">
+            It's too simple. You will upload picture of your liver ultrasound.
+            Our system will examine it and give you results.
+          </div>
         </div>
-        <div id ="flex-container">
-            <div id = "homeLeft">
-                <div id = "homeHead">
-                   WE ARE HERE TO HELP YOU!
-                </div>
-                <br><br><br><br><br>
-                <div id = "desc"> 
-                    Proper examination of liver disease is much imortant for better treatment. Little damage can be worst if not treated properly. This methodology will be a great help for poor people as it will be less expensive and ultimately providing relief from pain to the patients because they only need ultrasound images for predicting liver disease.
-                </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <div id = "homeHead">
-                    HOW IT WORKS?
-                </div>
-                <br><br><br><br><br>
-                <div id = "desc"> 
-                    It's too simple. You will upload picture of your liver ultrasound. Our system will examine it and give you results.
-                </div>
-            </div>
-            <div id = "homeRight">
-            </div>
-        </div>
+        <div id="homeRight"></div>
+      </div>
     </div>
 
-    <div id = "examine">
-        <div id = "heading">
-            <h1 class="h1">
-                EXAMINE
-            </h1>
-        </div>
-        <div id ="exm">
-            <div id ="exLeft">
-
-            </div>
-            <div id = "exRight">
-                <div id = "homeHead">
-                    LETS EXAMINE YOU
-                 </div>
-                 <br><br><br><br><br>
-                 <div id = "desc"> 
-                    Kindly Provide Us The Liver Ultrasound image
-                 </div>
-                 <br><br>
-                 <div>
-                    <div>
-                        <form
-              method="POST"
-              action="#"
-              id="test"
-              enctype="multipart/form-data"
-            >
-              <label for="img">Select image:</label>
-              <input
-                class="input-file"
-                type="file"
-                id="inpFilee"
-                name="inpFile"
-              />
-              <div
-                class="image-preview"
-                id="imagePreview"
-                style="
-                  width: 300px;
-                  min-height: 300px;
-                  border: 2px solid #dddddd;
-                  margin-top: 15px;
-                  margin-left: 210px;
-                  margin-bottom: 25px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-weight: bold;
-                  color: #cccccc;
-                "
+    <div id="examine">
+      <div id="heading">
+        <h1 class="h1">EXAMINE</h1>
+      </div>
+      <div id="exm">
+        <div id="exLeft"></div>
+        <div id="exRight">
+          <div id="homeHead">LETS EXAMINE YOU</div>
+          <br /><br /><br /><br /><br />
+          <div id="desc">Kindly Provide Us The Liver Ultrasound image</div>
+          <br /><br />
+          <div>
+            <div>
+              <form
+                method="POST"
+                action="#"
+                id="test"
+                enctype="multipart/form-data"
               >
-                <img
-                  src=""
-                  alt="Image-preview"
-                  class="image-preview__image"
-                  style="display: none; width: 100%"
+                <label for="img">Select image:</label>
+                <input
+                  class="input-file"
+                  type="file"
+                  id="inpFilee"
+                  name="inpFile"
                 />
-                <span
-                  class="image-preview__default-text"
-                  id="image-preview__default-text"
-                  >Image Preview</span
+                <div
+                  class="image-preview"
+                  id="imagePreview"
+                  style="
+                    width: 300px;
+                    min-height: 300px;
+                    border: 2px solid #dddddd;
+                    margin-top: 15px;
+                    margin-left: 210px;
+                    margin-bottom: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                    color: #cccccc;
+                  "
                 >
-              </div>
-              <button type="submit" class="input-button btn btn-primary">
-                Submit
-              </button>
-            </form>
-                    </div>
+                  <img
+                    src=""
+                    alt="Image-preview"
+                    class="image-preview__image"
+                    style="display: none; width: 100%"
+                  />
+                  <span
+                    class="image-preview__default-text"
+                    id="image-preview__default-text"
+                    >Image Preview</span
+                  >
                 </div>
-                <br><br>
-                <div class="col">
-                  <h1 style="text-align: center;">: Prediction :</h1>
-                  <br/>
-                  <h2 id="result" class="result" style="color: black; text-align: center;">
-                      {{Predicted_result}}
-                  </h2>
-                </div>
+                <button type="submit" class="input-button btn btn-primary">
+                  Submit
+                </button>
+              </form>
             </div>
+          </div>
+          <br /><br />
+          <div class="col">
+            <h1 style="text-align: center">: Prediction :</h1>
+            <br />
+            <h2
+              id="result"
+              class="result"
+              style="color: black; text-align: center"
+            >
+              {{Predicted_result}}
+            </h2>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id = "about">
-        <div id = "heading">
-            <h1 class="h1">
-                ABOUT US
-            </h1>
+    <div id="about">
+      <div id="heading">
+        <h1 class="h1">ABOUT US</h1>
+      </div>
+      <figure class="snip1559">
+        <div class="profile-image">
+          <img src="../static/Images/mam.jpg" alt="profile-sample2" />
         </div>
-        <figure class="snip1559">
-            <div class="profile-image"><img src="../static/Images/Maam.jpg" alt="profile-sample2" /></div>
-            <figcaption>
-              <h3>Ma'am Kanza Hamid</h3>
-              <h5>Supervisor</h5>
-              <p>Ma'am has guided us throughout from start to end of the Project</p>
-              <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-                <a href="#"> <i class="ion-social-twitter"></i></a>
-                <a href="#"> <i class="ion-social-vimeo"></i></a>
-              </div>
-            </figcaption>
-        </figure>
-        <figure class="snip1559">
-            <div class="profile-image"><img src="../static/Images/Abubakkar.jpg" alt="profile-sample6" /></div>
-            <figcaption>
-              <h3>AbuBakkar Sidique</h3>
-              <h5>Team Lead</h5>
-              <p>He has lead the team and was front man in all crunch situations.</p>
-              <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-                <a href="#"> <i class="ion-social-twitter"></i></a>
-                <a href="#"> <i class="ion-social-vimeo"></i></a>
-              </div>
-            </figcaption>
-        </figure>
-        <figure class="snip1559">
-            <div class="profile-image"><img src="../static/Images/Umer.jpeg" alt="profile-sample6" /></div>
-            <figcaption>
-              <h3>Umer Sajjad</h3>
-              <h5>Team Member</h5>
-              <p>He worked dedicatedly on front end plus documentation and some work on processing.</p>
-              <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-                <a href="#"> <i class="ion-social-twitter"></i></a>
-                <a href="#"> <i class="ion-social-vimeo"></i></a>
-              </div>
-            </figcaption>
-        </figure>
-        <figure class="snip1559">
-            <div class="profile-image"><img src="../static/Images/Ali.jpeg" alt="profile-sample6" /></div>
-            <figcaption>
-              <h3>Muhammad Ali</h3>
-              <h5>Team Member</h5>
-              <p>He has mainly worked on research and development.</p>
-              <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-                <a href="#"> <i class="ion-social-twitter"></i></a>
-                <a href="#"> <i class="ion-social-vimeo"></i></a>
-              </div>
-            </figcaption>
-        </figure>
+        <figcaption>
+          <h3>Ma'am Kanza Hamid</h3>
+          <h5>Supervisor</h5>
+          <p>Ma'am has guided us throughout from start to end of the Project</p>
+          <div class="icons">
+            <a href="#"><i class="ion-social-reddit"></i></a>
+            <a href="#"> <i class="ion-social-twitter"></i></a>
+            <a href="#"> <i class="ion-social-vimeo"></i></a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="snip1559">
+        <div class="profile-image">
+          <img src="../static/Images/abuBakar.png" alt="profile-sample6" />
+        </div>
+        <figcaption>
+          <h3>AbuBakkar Sidique</h3>
+          <h5>Team Lead</h5>
+          <p>
+            He has lead the team and was front man in all crunch situations.
+          </p>
+          <div class="icons">
+            <a href="#"><i class="ion-social-reddit"></i></a>
+            <a href="#"> <i class="ion-social-twitter"></i></a>
+            <a href="#"> <i class="ion-social-vimeo"></i></a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="snip1559">
+        <div class="profile-image">
+          <img src="../static/Images/Umer.png" alt="profile-sample6" />
+        </div>
+        <figcaption>
+          <h3>Umer Sajjad</h3>
+          <h5>Team Member</h5>
+          <p>
+            He worked dedicatedly on front end plus documentation and some work
+            on processing.
+          </p>
+          <div class="icons">
+            <a href="#"><i class="ion-social-reddit"></i></a>
+            <a href="#"> <i class="ion-social-twitter"></i></a>
+            <a href="#"> <i class="ion-social-vimeo"></i></a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="snip1559">
+        <div class="profile-image">
+          <img src="../static/Images/Ali.png" alt="profile-sample6" />
+        </div>
+        <figcaption>
+          <h3>Muhammad Ali</h3>
+          <h5>Team Member</h5>
+          <p>He has mainly worked on research and development.</p>
+          <div class="icons">
+            <a href="#"><i class="ion-social-reddit"></i></a>
+            <a href="#"> <i class="ion-social-twitter"></i></a>
+            <a href="#"> <i class="ion-social-vimeo"></i></a>
+          </div>
+        </figcaption>
+      </figure>
     </div>
 
     <script>
-      //console.log("asm");
-
       $(document).ready(function () {
         const inpFile = document.getElementById("inpFilee");
         const previewContainer = document.getElementById("imagePreview");
@@ -226,27 +230,20 @@
 
         inpFile.addEventListener("change", function () {
           const file = this.files[0];
-          console.log("--------")
-          console.log(file)
+
           if (file) {
-            
             const reader = new FileReader();
 
             previewDefaultText.style.display = "none";
             previewImage.style.display = "block";
             reader.addEventListener("load", function () {
-//console.log(this);
               previewImage.setAttribute("src", this.result);
             });
-
+            console.log("sgdhgfhs");
             reader.readAsDataURL(file);
           }
-          
-            
-          
         });
       });
     </script>
-
-</body>
+  </body>
 </html>

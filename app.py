@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.naive_bayes import BernoulliNB
 from keras.models import load_model
-import imutils
+import Abstention as abstention
 from skimage.transform import resize
 from flask import Flask, request, jsonify, render_template
 import pickle
@@ -32,7 +32,7 @@ def pre():
             file_path = os.path.join(basepath, 'uploads', inputs.filename)
             inputs.save(file_path)
         except FileNotFoundError:
-            print()
+            return "File not selected"
 
         image = plt.imread(file_path)
 
@@ -42,6 +42,9 @@ def pre():
         wavelet.featureExtraction(image)
         features = wavelet.normal_vs_abnormal()
         features = features.reshape(1, -1)
+        abstention_decision = abstention.reject(features)
+        if(abstention_decision):
+            return render_template("index.html", Predicted_result="Can not predict")
         prediction_NA = model_NA_SVM.predict(features)
 
         if (prediction_NA == 1):
